@@ -3,6 +3,7 @@
   "build": {
     "dockerfile": "./Dockerfile"
   },
+  "postCreateCommand": "go get -u ./...; go mod tidy",
   "customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
