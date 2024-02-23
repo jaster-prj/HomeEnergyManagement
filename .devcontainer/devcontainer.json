@@ -3,6 +3,9 @@
   "build": {
     "dockerfile": "./Dockerfile"
   },
+  "runArgs": [
+    "--name=HomeEnergyManagement_Devcontainer"
+  ],
   "postCreateCommand": "go get -u ./...; go mod tidy",
   "customizations": {
     // Configure properties specific to VS Code.
